@@ -20,12 +20,12 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/5.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = "django-insecure-x_^ty&oav_^!kynyhh)2n-%v=^27m4v^p6-_2q86^e&9uoftg8"
+SECRET_KEY = "pN5QIzQOumDB3T1Z1t7GuVAAMjeIBL64"
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -79,10 +79,10 @@ WSGI_APPLICATION = "truxt_ai.wsgi.application"
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'truxt_ai',
-        'USER': 'root',
-        'PASSWORD': 'root',
-        'HOST': 'localhost',
+        'NAME': 'django_admin',
+        'USER': 'django_admin',
+        'PASSWORD': 'Pass@123',
+        'HOST': 'django-admin.mysql.database.azure.com',
         'PORT': '3306',
     }
 }
